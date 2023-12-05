@@ -17,18 +17,18 @@ func (i *Investor) AddAssetPosition(assetPosition *InvestorAssetPosition) {
 	i.AssetPosition = append(i.AssetPosition, assetPosition)
 }
 
-func (i *Investor) UpdateAssetPosition(assetID string, qtdShares int) {
-	assetPosition := i.GetAssetPosition(assetID)
+func (i *Investor) UpdateAssetPosition(assetId string, qtdShares int) {
+	assetPosition := i.GetAssetPosition(assetId)
 	if assetPosition == nil {
-		i.AssetPosition = append(i.AssetPosition, NewInvestorAssetPosition(assetID, qtdShares))
+		i.AssetPosition = append(i.AssetPosition, NewInvestorAssetPosition(assetId, qtdShares))
 	} else {
 		assetPosition.Shares += qtdShares
 	}
 }
 
-func (i *Investor) GetAssetPosition(assetID string) *InvestorAssetPosition {
+func (i *Investor) GetAssetPosition(assetId string) *InvestorAssetPosition {
 	for _, assetPosition := range i.AssetPosition {
-		if assetPosition.AssetID == assetID {
+		if assetPosition.AssetID == assetId {
 			return assetPosition
 		}
 	}
@@ -40,9 +40,9 @@ type InvestorAssetPosition struct {
 	Shares  int
 }
 
-func NewInvestorAssetPosition(assetID string, shares int) *InvestorAssetPosition {
+func NewInvestorAssetPosition(assetId string, shares int) *InvestorAssetPosition {
 	return &InvestorAssetPosition{
-		AssetID: assetID,
+		AssetID: assetId,
 		Shares:  shares,
 	}
 }
