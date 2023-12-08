@@ -8,3 +8,5 @@
     Tecnologias Utilizadas: Docker, Go, Kafka, Nest.JS, Next.JS e ReactJS
   </p>
 </div>
+
+Caso esteja enfrentando algum problema ao iniciar o GO para se conectar com o Kafka sugiro que de uma olhada desse [repositório](https://github.com/devfullcycle/imersao14/blob/main/kafka/README.md)

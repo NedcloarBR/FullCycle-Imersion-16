@@ -1,0 +1,1 @@
+Aqui está o armazenadas minhas tentativas de refatorar a função [Trade](https://github.com/NedcloarBR/FullCycle-Immersion-16/blob/main/go/internal/market/entity/book.go#L26) do [book.go](https://github.com/NedcloarBR/FullCycle-Immersion-16/blob/main/go/internal/market/entity/book.go)
