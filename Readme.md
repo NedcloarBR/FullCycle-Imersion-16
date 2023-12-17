@@ -10,3 +10,5 @@
 </div>
 
 Caso esteja enfrentando algum problema ao iniciar o GO para se conectar com o Kafka sugiro que de uma olhada desse [repositório](https://github.com/devfullcycle/imersao14/blob/main/kafka/README.md)
+
+infelizmente não consegui acompanhar toda a imersão por falta de tempo então esse repositório não está completo. Ele contempla até às 02:20:00 da terceira aula
